@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
 		
 	</head>
 	<body>
@@ -22,19 +23,21 @@
 				<ul class="navbar-nav">
 					<li class="nav-item">
 					<a class="nav-link active" aria-current="page" href="#">Creación de Tejidos</a>
+					<a class="nav-link active" aria-current="page" href="#representar">Representacion</a>
+					<a class="nav-link active" aria-current="page" href="#color">Colorido</a>
 					</li>
 				</ul>
 				</div>
 			</div>
 		</nav>
-		<div class="align-middle">
+		<div class="align-middle" name="representacion">
 			<div class="card mb-2 mt-2 ml-2" style="width: 80%;">
 				<div class="card" style="height:700px">
 					<div class="card-header bg-dark text-white">
 						REPRESENTACIÓN DEL TEJIDO
 					</div>
-					<div class="card-body">
-					<Form name="formulario" class="">
+					<div class="card-body" id="representar">
+					<Form name="formulario" class="form">
 							<div class="input-group mb-3">
 								<input type="text" class="form-control input-group-sm mb-3" name="prim">
 								<span class="input-group-text input-group-sm mb-3 bg-dark text-white">e</span>
@@ -51,7 +54,7 @@
 				<div class="card-header bg-dark text-white">
 					REPRESENTACIÓN DEL COLORIDO
 				</div>
-				<div class="card-body">
+				<div class="card-body" id="color">
 				<Form name="tincion">
 				<label for="exampleColorInput" class="form-label">Elige un color para cada hilo</label>
 						<input type="color" class="form-control form-control-color bg-dark" name="color" id="color" value="#563d7c" title="Elige un color">
@@ -62,6 +65,8 @@
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/mostrartejido.js"></script>
+
 
 	</body>
 	<footer class="text-center text-white fixed-bottom bg-dark">
